@@ -57,6 +57,6 @@ echo "Array:"
 cleanArray
 
 
-echo $(($RANDOM % 10))
+echo $(($RANDOM / 10))
 
 
