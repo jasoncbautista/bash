@@ -57,4 +57,6 @@ echo "Array:"
 cleanArray
 
 
+echo "$RANDOM % 10"
+
 
