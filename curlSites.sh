@@ -1,4 +1,4 @@
 #! /usr/bin/env bash
 
 
-curl -o googleIndex.html google.com
+curl -L -o googleIndex.html google.com
