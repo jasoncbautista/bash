@@ -33,16 +33,18 @@ function generateRandom() {
 
 echo $(generateRandom)
 
-
-
 # Echo an array:
 function cleanArray() {
-    sampleArray=(one two three four)
+    # sampleArray=(one two three four)
+    declare  -a sampleArray
     for ii in "${sampleArray[@]}"
     do
         echo "$ii"
     done
 }
 
+echo "Array:"
 cleanArray
+
+
 
