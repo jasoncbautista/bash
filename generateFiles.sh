@@ -40,7 +40,11 @@ function cleanArray() {
     #sampleArray=()
     sampleArray+=("one")
     sampleArray+=("two")
+    sampleArray+=("three")
+    sampleArray+=("three")
 
+    unset sampleArray[1]
+    unset sampleArray[2]
     for ii in "${sampleArray[@]}"
     do
         echo "$ii"
