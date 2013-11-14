@@ -24,6 +24,14 @@ function returningExample() {
     echo "$someStuff"
 }
 
-
 result=$(returningExample)
 echo $result
+
+
+function generateRandom() {
+    echo "$RANDOM"
+}
+
+echo $(generateRandom)
+
+
