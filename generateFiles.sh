@@ -50,6 +50,7 @@ function cleanArray() {
     do
         echo "$ii"
     done
+    # So how to return an array? Seems hard in bash.. odd.
 }
 
 echo "Array:"
