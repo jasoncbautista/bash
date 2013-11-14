@@ -28,10 +28,11 @@ result=$(returningExample)
 echo $result
 
 function generateRandom() {
-    echo "$RANDOM"
+
+    echo "$RANDOM $1"
 }
 
-echo $(generateRandom)
+echo $(generateRandom ":testing")
 
 # Echo an array:
 function cleanArray() {
