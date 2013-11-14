@@ -27,11 +27,22 @@ function returningExample() {
 result=$(returningExample)
 echo $result
 
-
 function generateRandom() {
     echo "$RANDOM"
 }
 
 echo $(generateRandom)
 
+
+
+# Echo an array:
+function cleanArray() {
+    sampleArray=(one two three four)
+    for ii in "${sampleArray[@]}"
+    do
+        echo "$ii"
+    done
+}
+
+cleanArray
 
