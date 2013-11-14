@@ -37,6 +37,10 @@ echo $(generateRandom)
 function cleanArray() {
     # sampleArray=(one two three four)
     declare  -a sampleArray
+    #sampleArray=()
+    sampleArray+=("one")
+    sampleArray+=("two")
+
     for ii in "${sampleArray[@]}"
     do
         echo "$ii"
