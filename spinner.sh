@@ -31,16 +31,11 @@ rotdash2(){
     p=$1
     while [ -d /proc/$p ]
     do
-	echo -n '/' ; sleep 0.05
-	echo -n '-' ; sleep 0.05
-	echo -n '\' ; sleep 0.05
-	echo -n '|' ; sleep 0.05
+	echo -n '/' ; sleep 0.07
+	echo -n '-' ; sleep 0.07
+	echo -n '\' ; sleep 0.07
+	echo -n '|' ; sleep 0.07
 
-#        echo -en '\E[32;40m/' ; sleep .05
-#        echo -en '\E[32;40m-' ; sleep .05
-#        echo -en '\E[32;40m\' ; sleep .05
-#        echo -en '\E[32;40m|' ; sleep .05
-#        echo -en '\E[32;42mS' ; tput sgr0 ; sleep .2
     done
 }
 
