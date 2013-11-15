@@ -33,8 +33,8 @@ rotdash2(){
     do
 	echo -n '/' ; sleep 0.07
 	echo -n '-' ; sleep 0.07
-	echo -n '\' ; sleep 0.07
 	echo -n '|' ; sleep 0.07
+	echo -n '\' ; sleep 0.07
 
     done
 }
