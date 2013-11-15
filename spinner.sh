@@ -31,10 +31,10 @@ rotdash2(){
     p=$1
     while [ -d /proc/$p ]
     do
-        echo -en '\E[32;40m/^H' ; sleep .05
-        echo -en '\E[32;40m-^H' ; sleep .05
-        echo -en '\E[32;40m\^H' ; sleep .05
-        echo -en '\E[32;40m|^H' ; sleep .05
+        echo -en '\E[32;40m/' ; sleep .05
+        echo -en '\E[32;40m-' ; sleep .05
+        echo -en '\E[32;40m\' ; sleep .05
+        echo -en '\E[32;40m|' ; sleep .05
         echo -en '\E[32;42mS' ; tput sgr0 ; sleep .2
     done
 }
@@ -55,5 +55,5 @@ sleep 10 &
 
 last_pid=$1
 echo "$last_pid"
-spinner $!
+rotdash2 $!
 
