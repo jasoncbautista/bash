@@ -22,20 +22,18 @@ spinner(){
     return 0
 }
 
-du /usr >/dev/null 2>&1 &
-spinner $(pidof du)
-
-
+#du /usr >/dev/null 2>&1 &
+#spinner $(pidof du)
 
 rotdash2(){
     p=$1
     echo "$p"
     while [ -d /proc/$p ]
     do
-	echo -n '/' ; sleep 0.07
-	echo -n '*' ; sleep 0.07
-	echo -n '\' ; sleep 0.07
-	echo -n '|' ; sleep 0.07
+	echo -n '/' ; sleep 0.05
+	echo -n '*' ; sleep 0.05
+	echo -n '\' ; sleep 0.05
+	echo -n '|' ; sleep 0.05
     done
 }
 
@@ -51,6 +49,6 @@ function spinner {
     return 0
 }
 
-#sleep 10 &
-#rotdash2 $!
+sleep 10 &
+rotdash2 $!
 
