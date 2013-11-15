@@ -31,7 +31,7 @@ rotdash2(){
     while [ -d /proc/$p ]
     do
 	echo -n '/' ; sleep 0.05
-	echo -n '*' ; sleep 0.05
+	echo -n '-' ; sleep 0.05
 	echo -n '\' ; sleep 0.05
 	echo -n '|' ; sleep 0.05
     done
